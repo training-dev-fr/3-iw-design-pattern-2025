@@ -1,5 +1,18 @@
 [
-    { "type": "text", "label": "Nom complet", "name":"firstname","id":"firstname" },
-    { "type": "email", "label": "Adresse e-mail", "name":"email","id":"email" },
-    { "type": "password", "label": "Mot de passe", "name":"password","id":"password" }
+    { "type": "text", "label": "Nom d'utilisateur", "id": "username", "name": "username" },
+    { "type": "password", "label": "Mot de passe", "id": "password", "name": "password" },
+    { "type": "email", "label": "E-mail de récupération", "id": "recoveryEmail", "name": "recoveryEmail" },
+    { "type": "select", "label": "Pays", "id": "country", "name": "country", "options": {
+      "fr": "France",
+      "be": "Belgique",
+      "ch": "Suisse"
+    }},
+    { "type": "checkbox", "label": "J'accepte les conditions d'utilisation", "id": "terms", "name": "terms", "options":{
+        "oui":""
+    } },
+    { "type": "radio", "label": "Sexe", "id": "gender", "name": "gender", "options": {
+      "m": "Homme",
+      "f": "Femme",
+      "x": "Autre"
+    }}
   ]
