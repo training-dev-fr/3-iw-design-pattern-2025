@@ -1,0 +1,5 @@
+[
+    { "type": "text", "label": "Nom complet", "name":"firstname","id":"firstname" },
+    { "type": "email", "label": "Adresse e-mail", "name":"email","id":"email" },
+    { "type": "password", "label": "Mot de passe", "name":"password","id":"password" }
+  ]
