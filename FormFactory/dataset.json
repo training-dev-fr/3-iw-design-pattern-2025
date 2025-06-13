@@ -1,5 +1,10 @@
 [
     { "type": "text", "label": "Nom d'utilisateur", "id": "username", "name": "username" },
     { "type": "password", "label": "Mot de passe", "id": "password", "name": "password" },
-    { "type": "email", "label": "E-mail de récupération", "id": "recoveryEmail", "name": "recoveryEmail" }
+    { "type": "email", "label": "E-mail de récupération", "id": "recoveryEmail", "name": "recoveryEmail" },
+    { "type": "select", "label": "Pays", "id": "country", "name": "country", "options": {
+      "fr": "France",
+      "be": "Belgique",
+      "ch": "Suisse"
+    }}
   ]

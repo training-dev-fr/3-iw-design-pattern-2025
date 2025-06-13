@@ -1,6 +1,6 @@
 import FormFactory from "./FormFactory.js";
 
-let formData = {}
+window.myData = {}
 
 async function loadData() {
     let result = await fetch('./dataset.json');
@@ -21,7 +21,7 @@ async function init() {
         let object = new FormFactory(element);
         showFormField(object);
         object.onChange((value,element) => {
-            formData[element.name] = value;
+            window.myData[element.name] = value;
         });
     }
 }
