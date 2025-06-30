@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="add-field">+</button>
+    <div class="modal">
+        <div class="content">
+            <button class="close">x</button>
+            Quel type de champ voulez vous ajouter?
+            <select class="field-type">
+                <option disabled selected>Sélectionnez une valeur dans la liste</option>
+                <option value="text">Texte court</option>
+                <option value="textarea">Texte long</option>
+                <option value="select">Liste déroulante</option>
+                <option value="checkbox">Choix multiple</option>
+            </select>
+            <div class="field-form"></div>
+            <button class="valid-field">Ajouter</button>
+        </div>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

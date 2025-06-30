@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+}
+
+.modal{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #D0D0D080;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.modal.show{
+    display: flex;
+}
+
+.modal .content{
+    width: 40%;
+    border: 2px solid #B0B0B040;
+    border-radius: 8px;
+    padding: 12px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal .content .close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+input, select{
+    padding: 8px;
+}
+
+.modal .content .valid-field{
+    border: none;
+    background-color: #1565c0;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
