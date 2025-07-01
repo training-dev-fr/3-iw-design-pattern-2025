@@ -2,16 +2,17 @@ import DAB from "./DAB.js";
 
 export default class Banque{
     constructor(){
-        this.DAB = new DAB();
+        this.DABList = [new DAB("Lille")];
+        this.DABList.push(new DAB("Five"));
         this.DAB.addEventListener("withdraw",this.removeMoneyFromAccount);
         this.DAB.addEventListener("deposite",this.addMoneyFromAccount);
     }
 
-    removeMoneyFromAccount(amount){
-        console.log("we have remove " + amount + " from the account");
+    removeMoneyFromAccount(e){
+        console.log("we have remove " + e.amount + " from the account on DAB " + e.name);
     }
 
-    addMoneyFromAccount(amount){
-        console.log("we have add " + amount + " from the account");
+    addMoneyFromAccount(e){
+        console.log("we have add " + e.amount + " from the account on DAB " + e.name);
     }
 }

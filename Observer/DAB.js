@@ -1,23 +1,24 @@
-export default class DAB{
-    constructor(){
-       this.callbackList = []; 
+export default class DAB {
+    constructor(name) {
+        this.name = name;
+        this.callbackList = [];
     }
 
-    withdraw(amount){
-        for(let event of this.callbackList.filter(event => event.event === "withdraw")){
+    withdraw(amount) {
+        for (let event of this.callbackList.filter(event => event.event === "withdraw")) {
             event.callback(amount);
         }
         return amount;
     }
 
-    deposite(amount){
-        for(let event of this.callbackList.filter(event => event.event === "deposite")){
+    deposite(amount) {
+        for (let event of this.callbackList.filter(event => event.event === "deposite")) {
             event.callback(amount);
         }
         return amount;
     }
 
-    addEventListener(event,callback){
-        this.callbackList.push({event: event,callback: callback});
+    addEventListener(event, callback) {
+        this.callbackList.push({ event: event, callback: callback });
     }
 }
