@@ -1,5 +1,5 @@
 <?php
-    class Controller
+    class Controller implements IController
     {
         function pressButtonUp()
         {

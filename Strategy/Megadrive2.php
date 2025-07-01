@@ -1,5 +1,5 @@
 <?php
-    class MegaDrive2 implements Console{
+    class MegaDrive2 extends Console{
         private $controller1;
         private $controller2;
 
