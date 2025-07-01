@@ -4,8 +4,11 @@ export default class Banque{
     constructor(){
         this.DABList = [new DAB("Lille")];
         this.DABList.push(new DAB("Five"));
-        this.DAB.addEventListener("withdraw",this.removeMoneyFromAccount);
-        this.DAB.addEventListener("deposite",this.addMoneyFromAccount);
+        for(let dab of this.DABList){
+            dab.addEventListener("withdraw",this.removeMoneyFromAccount);
+            dab.addEventListener("deposite",this.addMoneyFromAccount);
+        }
+
     }
 
     removeMoneyFromAccount(e){
