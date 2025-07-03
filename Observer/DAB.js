@@ -6,14 +6,14 @@ export default class DAB {
 
     withdraw(amount) {
         for (let event of this.callbackList.filter(event => event.event === "withdraw")) {
-            event.callback(amount);
+            event.callback({amount: amount, name: this.name});
         }
         return amount;
     }
 
     deposite(amount) {
         for (let event of this.callbackList.filter(event => event.event === "deposite")) {
-            event.callback(amount);
+            event.callback({amount: amount, name: this.name});
         }
         return amount;
     }
