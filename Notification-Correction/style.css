@@ -1,0 +1,26 @@
+.notification-bloc{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 300px;
+}
+
+.notification-bloc .notification{
+    display: flex;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #80808080;
+    color: white;
+}
+
+.notification.info{
+    background-color: #1565c0D0;
+}
+
+.notification.warning{
+    background-color: #F0401080;
+}
+
+.notification.danger{
+    background-color: #FF0000D0;
+}
